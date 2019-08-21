@@ -1,0 +1,5 @@
+2019-08-20 00:03:56.981  WARN 6568 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m38s766ms14µs800ns).
+2019-08-20 08:04:17.521  WARN 6568 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h59m1s598ms618µs700ns).
+2019-08-20 08:41:14.585  WARN 6568 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m7s774ms591µs199ns).
+2019-08-20 09:30:03.086  WARN 6568 --- [http-nio-0.0.0.0-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-08-20 09:30:04.225  WARN 6568 --- [http-nio-0.0.0.0-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
