@@ -31,7 +31,7 @@ public class UserController {
 	
 	@RequestMapping("/details")
 	public String selectUsers(UserVo vo) throws Exception {
-		JsonMessage message = new JsonMessage();  
+		JsonMessage message = new JsonMessage();
 		Object detail = vo.getUserid()==null?service.getUserVoList():service.getUserByUserId(vo);
 		if(ObjectUtils.isEmpty(detail)) {
 			message.setMessage("userid:"+vo.getUserid()+" is empty");
