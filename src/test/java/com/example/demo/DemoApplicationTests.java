@@ -11,7 +11,6 @@ public class DemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		system.out.print("test");
 	}
 
 }
