@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.message.JsonMessageFactory;
+import com.example.demo.message.SuccessMessage;
+import com.example.demo.message.factory.JsonMessageFactory;
 import com.example.demo.service.UserService;
 import com.example.demo.vo.UserVo;
 
@@ -29,7 +30,7 @@ public class UserController {
 	@RequestMapping("/details")
 	public String selectUsers() throws Exception {
 		Object detail = service.getUserVoList();
-		return factory.getSuccessMessage(detail);
+		return new SuccessMessage(detail).toJson();
 	}
 	
 	@RequestMapping("/detail")
@@ -57,7 +58,7 @@ public class UserController {
 		if(true) {
 			throw new Exception("error test");
 		}
-		return factory.getSuccessMessage("Success");
+		return new SuccessMessage("success").toJson();
 	}
 	
 

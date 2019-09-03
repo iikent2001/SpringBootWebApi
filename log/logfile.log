@@ -121,3 +121,8 @@ Consider defining a bean of type 'com.example.demo.message.JsonMessage' in your 
 2019-09-03 10:18:00.552  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
 2019-09-03 10:18:01.363  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-09-03 10:18:01.498  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.967 seconds (JVM running for 1415.063)
+2019-09-03 10:20:51.949  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 10:20:51.950 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 10:20:51.950  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 10:20:52.854  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 10:20:52.990  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.065 seconds (JVM running for 1586.554)
