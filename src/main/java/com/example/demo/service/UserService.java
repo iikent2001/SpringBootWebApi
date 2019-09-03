@@ -19,37 +19,16 @@ public class UserService {
 	@Autowired
 	UserRepository userRepository;
 	
-	@Autowired
-	UserConvert convert;
-	
 	public List<User> getUserList(){
 		return  userRepository.findAll(Sort.by(Direction.ASC, "userid"));
 	}
 	
-	public Object getUserVoList(UserVo vo){
-		return  userRepository.findById(vo.getUserid());
+	public Object getUserVoList(Long userId){
+		return  userRepository.findById(userId);
 	}
 	
-	
-	
-	public List<UserVo> getUserVoList() {
-		List<User> users = getUserList();
-		return this.convertToVoList(users);
-	}
-	
-	
-	private List<UserVo> convertToVoList(List<User> users) {
-		List<UserVo> userVoList = new ArrayList<UserVo>();
-		for(int index=0,num=1;index<users.size();index++,num++) {
-			UserVo vo = convert.convertToVo(users.get(index));
-			vo.setNumber(num);
-			userVoList.add(vo);
-		}
-		return userVoList;
-	}
-	
-	public User saveUser(UserVo userVo) {
-		return userRepository.save(convert.convertToBean(userVo));
+	public User saveUser(User user) {
+		return userRepository.save(user);
 	}
 	
 }
