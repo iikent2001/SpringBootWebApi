@@ -38,7 +38,7 @@ public class UserController {
 
 	@RequestMapping("/detail")
 	public String selectUser(UserVo vo) throws Exception {
-		Object detail = service.getUserVoList(vo.getUserid());
+		Object detail = service.getUserById(vo.getUserid());
 		if (ObjectUtils.isEmpty(detail)) {
 			return factory.getEmptyUserIdMessage(vo.getUserid());
 		} else {
