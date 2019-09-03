@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.validation.ObjectError;
 
-public class SaveFailedMessage extends JsonMessageTemplete{
+public class SaveFailedMessage extends JsonMessageTemplate{
 	public SaveFailedMessage(List<ObjectError> objectErrors) {
 		message.setCode(02);
 		message.setMessage(getErrorMessageString(objectErrors));
