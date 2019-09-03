@@ -1,8 +1,5 @@
 package com.example.demo.message;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class JsonMessage{
 	
 	private Object success;

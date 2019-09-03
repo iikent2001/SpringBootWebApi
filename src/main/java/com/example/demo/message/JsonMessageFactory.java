@@ -1,46 +1,64 @@
 package com.example.demo.message;
 
-import java.lang.reflect.Method;
+import java.util.List;
 
-import org.apache.commons.lang3.StringUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.ObjectError;
 
-import com.example.demo.message.JsonMessage;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 @Component
-public class JsonMessageFactory<T> {
+public class JsonMessageFactory {
 	
-	private Gson gson =new GsonBuilder().create();
-	private JsonMessage message;
-	Logger log = LogManager.getLogger(this.getClass());	
-	public JsonMessageFactory() {
-		message = new JsonMessage();
+	private Gson gson =new GsonBuilder().disableHtmlEscaping().create();
+	
+	public String getExceptionMessage(String msg,String url) {
+		JsonMessage message = new JsonMessage();
+		message.setMessage(msg);
+		message.setUrl(url);
+		return toJson(message);
 	}
 	
-	@SuppressWarnings("unchecked")
-	public void setAttribute(String fieldName,Object obj) throws Exception {
-		try {
-			@SuppressWarnings("rawtypes")
-			Class clz = message.getClass();
-			Method m = clz.getMethod(getSetterName(fieldName), Object.class);
-			m.invoke(message, obj);
-		}catch(Exception e) {
-			log.debug(e.getMessage());
-			throw new Exception("JsonMessageFactory.setAttribute error");
+	public String getSuccessMessage(Object obj) {
+		JsonMessage message = new JsonMessage();
+		message.setSuccess(obj);
+		return toJson(message);
+	}
+	
+	//
+	public String getEmptyUserIdMessage(Object userId) {
+		JsonMessage message = new JsonMessage();
+		message.setMessage("userid:"+userId+" is empty");
+		return toJson(message);
+	}
+	
+	public String getSaveSuccessMessage(Object user) {
+		JsonMessage message = new JsonMessage();
+		message.setCode(01);
+		message.setData(user);
+		return toJson(message);
+	}
+	
+	public String getSaveFailedMessage(List<ObjectError> objectErrors) {
+		JsonMessage message = new JsonMessage();
+		message.setCode(02);
+		message.setMessage(getErrorMessageString(objectErrors));
+		return toJson(message);
+	}
+	
+	private String getErrorMessageString(List<ObjectError>  errors) {
+		String errorMessage="";
+		for(ObjectError error :errors) {
+			errorMessage+=error.getDefaultMessage()+",";
 		}
+		errorMessage = errorMessage.substring(0, errorMessage.length()-1);
+		return errorMessage;
 	}
-	
-	private String getSetterName(String fieldName) {
-		return "set"+StringUtils.substring(fieldName, 0,1).toUpperCase()+
-		StringUtils.substring(fieldName,1);
 		
-	}
 	
-	public String toJson() {
+	private String toJson(JsonMessage message) {
 		return gson.toJson(message);
 	}
+	
 }

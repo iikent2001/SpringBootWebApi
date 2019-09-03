@@ -1,5 +1,123 @@
-2019-08-20 00:03:56.981  WARN 6568 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m38s766ms14µs800ns).
-2019-08-20 08:04:17.521  WARN 6568 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h59m1s598ms618µs700ns).
-2019-08-20 08:41:14.585  WARN 6568 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m7s774ms591µs199ns).
-2019-08-20 09:30:03.086  WARN 6568 --- [http-nio-0.0.0.0-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2019-08-20 09:30:04.225  WARN 6568 --- [http-nio-0.0.0.0-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-09-03 09:26:04.706  INFO 11160 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11160 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 09:26:04.739 DEBUG 11160 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 09:26:04.741  INFO 11160 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 09:26:13.718  WARN 11160 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userExceptionHendler': Unsatisfied dependency expressed through field 'message'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.message.JsonMessage' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-09-03 09:26:14.217 ERROR 11160 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field message in com.example.demo.exception.UserExceptionHendler required a bean of type 'com.example.demo.message.JsonMessage' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.message.JsonMessage' in your configuration.
+
+2019-09-03 09:26:41.440  INFO 11932 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11932 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 09:26:41.444 DEBUG 11932 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 09:26:41.447  INFO 11932 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 09:26:47.470  WARN 11932 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userExceptionHendler': Unsatisfied dependency expressed through field 'message'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.message.JsonMessage' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-09-03 09:26:47.974 ERROR 11932 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field message in com.example.demo.exception.UserExceptionHendler required a bean of type 'com.example.demo.message.JsonMessage' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.message.JsonMessage' in your configuration.
+
+2019-09-03 09:27:23.205  INFO 11572 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11572 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 09:27:23.215 DEBUG 11572 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 09:27:23.216  INFO 11572 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 09:27:30.093  WARN 11572 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userExceptionHendler': Unsatisfied dependency expressed through field 'message'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.message.JsonMessage' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-09-03 09:27:30.538 ERROR 11572 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field message in com.example.demo.exception.UserExceptionHendler required a bean of type 'com.example.demo.message.JsonMessage' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.message.JsonMessage' in your configuration.
+
+2019-09-03 09:54:27.672  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 09:54:27.676 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 09:54:27.680  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 09:54:34.085  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 09:54:34.612  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 7.462 seconds (JVM running for 8.177)
+2019-09-03 09:54:48.439 ERROR 11732 --- [http-nio-0.0.0.0-8081-exec-1] ointCut$$EnhancerBySpringCGLIB$$d4d22a71 : method:selectUsers cause:The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2019-09-03 09:54:48.493  WARN 11732 --- [http-nio-0.0.0.0-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!]
+2019-09-03 09:56:40.800  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 09:56:40.800 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 09:56:40.801  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 09:56:42.035  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 09:56:42.255  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.496 seconds (JVM running for 135.819)
+2019-09-03 09:56:45.288  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 09:56:45.289 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 09:56:45.290  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 09:56:46.368  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 09:56:46.560  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.3 seconds (JVM running for 140.125)
+2019-09-03 09:57:01.644  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 09:57:01.645 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 09:57:01.645  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 09:57:02.646  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 09:57:02.826  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.209 seconds (JVM running for 156.391)
+2019-09-03 09:57:20.443 ERROR 11732 --- [http-nio-0.0.0.0-8081-exec-1] ointCut$$EnhancerBySpringCGLIB$$d4d22a71 : method:selectUser cause:The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+2019-09-03 09:57:20.448  WARN 11732 --- [http-nio-0.0.0.0-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!]
+2019-09-03 09:57:34.074  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 09:57:34.074 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 09:57:34.075  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 09:57:35.117  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 09:57:35.263  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.216 seconds (JVM running for 188.828)
+2019-09-03 10:01:02.692  WARN 11732 --- [http-nio-0.0.0.0-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-09-03 10:01:36.835  WARN 11732 --- [http-nio-0.0.0.0-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-09-03 10:02:19.073  WARN 11732 --- [http-nio-0.0.0.0-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-09-03 10:15:39.909  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 10:15:39.909 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 10:15:39.910  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 10:15:40.918  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 10:15:41.087  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.208 seconds (JVM running for 1274.652)
+2019-09-03 10:15:48.144  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 10:15:48.144 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 10:15:48.144  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 10:15:49.098  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 10:15:49.272  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.152 seconds (JVM running for 1282.837)
+2019-09-03 10:16:20.575  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 10:16:20.575 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 10:16:20.576  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 10:16:21.707  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 10:16:21.863  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 1.312 seconds (JVM running for 1315.428)
+2019-09-03 10:16:33.953  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 10:16:33.953 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 10:16:33.954  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 10:16:34.765  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 10:16:34.922  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.991 seconds (JVM running for 1328.486)
+2019-09-03 10:18:00.551  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Starting DemoApplication on DESKTOP-KS4ERSH with PID 11732 (D:\demo\bin\main started by iiken in D:\demo)
+2019-09-03 10:18:00.552 DEBUG 11732 --- [restartedMain] com.example.demo.DemoApplication         : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-09-03 10:18:00.552  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2019-09-03 10:18:01.363  WARN 11732 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-03 10:18:01.498  INFO 11732 --- [restartedMain] com.example.demo.DemoApplication         : Started DemoApplication in 0.967 seconds (JVM running for 1415.063)

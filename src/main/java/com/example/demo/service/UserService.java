@@ -26,9 +26,11 @@ public class UserService {
 		return  userRepository.findAll(Sort.by(Direction.ASC, "userid"));
 	}
 	
-	public Object getUserByUserId(UserVo vo){
+	public Object getUserVoList(UserVo vo){
 		return  userRepository.findById(vo.getUserid());
 	}
+	
+	
 	
 	public List<UserVo> getUserVoList() {
 		List<User> users = getUserList();

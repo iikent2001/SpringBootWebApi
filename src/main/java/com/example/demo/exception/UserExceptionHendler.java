@@ -7,25 +7,20 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.demo.message.JsonMessage;
-import com.example.demo.singleton.GsonSingleton;
-import com.google.gson.Gson;
+import com.example.demo.message.JsonMessageFactory;
+
+
 
 @ControllerAdvice
 public class UserExceptionHendler {
-
+	
 	@Autowired
-	JsonMessage message;
-	
-	Gson gson =GsonSingleton.instance();
-	
+	JsonMessageFactory factory;
+
 	@ExceptionHandler(value = Exception.class)
 	@ResponseBody
 	public String exceptionHendler(HttpServletRequest req, Exception e) {
-		message.setCode(9999);
-		message.setMessage(e.getMessage());
-		message.setUrl(req.getRequestURL().toString());
-		return gson.toJson(message);
+		return factory.getExceptionMessage(e.getMessage(),req.getRequestURL().toString());
 	}
 	
 }
